@@ -1,0 +1,300 @@
+/*Media query max-width (configuración # 1)*/
+
+/*-------------Formato vertical-------------*/
+
+@media (max-width:525px) {
+
+/*Configuración título de la página*/
+
+.contenedor-menu{
+    width: 50%;
+}
+
+.nombre-pagina{
+    font-size: 25px;
+}
+
+/*Configuración del menú desplegable*/
+  
+  .click-inicio{
+    font-size: 30px;
+  }
+  
+/*Configuración general de la página:
+
+1) Background de la página
+2) Ajuste del tamaño de la página al 90% del viewport
+3) Centrado del contenido
+4) Ajuste vertical en relación al tamaño de la cabecera horizontal fija*/
+
+.contenedor-articulo{
+  padding-top: 110px;
+}
+
+/*Configuración de los cuadros de fecha de creación y títulos del artículo*/
+
+.contenedor-fecha-titulo{
+  margin-bottom: 20px;
+}
+
+.titulo-articulo{
+  font-size: 20px;
+}
+
+/*Configuración de las text-boxes para el tema de Orden*/
+
+.contenedor-relacion{
+  width: 50%;
+}
+
+/*Configuración de las text-boxes para el tema de Postulados*/
+
+.contenedor-postulado-fila{
+  width: 50%;
+}
+
+.contenedor-postulado{
+  width: 50%;
+}
+
+.contenedor-postulado-columna{
+  width: 66%;
+}
+
+/*Configuración imagenes parte Valor absoluto*/
+
+.recta-numerica{
+  width: 100%;
+}
+
+/*Configuración de tablas de contenido: Valor absoluto y relativo*/
+
+.tabla-dos, .tabla-tres{
+  width: 90%;
+}
+
+/*Configuración del footer de la página*/
+
+.contenedor-footer{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #4ABDAC;
+}
+
+.mensaje-footer{
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.reloj{
+  margin-right: 10px;
+  font-size: 15px;
+  height: 50%;
+}
+
+}
+
+/*Media query max-width (configuración específica de la tabla)
+
+/*-------------Formato vertical-------------*/
+
+@media (max-width:800px) {
+
+/*Configuración de tablas de contenido: Propiedades*/
+
+.tabla-uno{
+  width: 90%;
+  border:1px solid #fff;
+}
+
+.titulo-tabla-movil{
+  text-align: center;
+  background-color: #FC4A1A;
+  color:#fff;
+}
+
+.tabla-uno tr{
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-tabla{
+  display: none;
+}
+
+.tabla-uno th, td{
+  border: 1px solid #fff;
+}
+
+.tabla-uno td[data-titulo]{
+  display: flex;
+  flex-direction: column;
+}
+
+.tabla-uno td[data-titulo]::before{
+  content: attr(data-titulo);
+}
+
+}
+
+/*Media query min-width (configuración # 2)*/
+
+/*-------------Formato horizontal-------------*/
+
+@media (min-width:525px) {
+
+/*Configuración del menú desplegable*/
+
+.contenedor-menu{
+  width: 32%;
+}
+
+/*Configuración general de la página:
+
+1) Background de la página
+2) Ajuste del tamaño de la página al 90% del viewport
+3) Centrado del contenido
+4) Ajuste vertical en relación al tamaño de la cabecera horizontal fija*/
+
+.contenedor-articulo{
+  padding-top: 80px;
+}
+
+/* Configuración del header fijo horizontal*/
+
+.contenedor-header{
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.contenedor-menu{
+  top: 2px;
+}
+
+/*Configuración de los cuadros de fecha de creación y títulos del artículo*/
+
+.titulo-articulo{
+  font-size: 22px;
+}
+
+/*Configuración de las text-boxes para el tema de Orden*/
+
+.contenedor-relacion{
+  width: 21%;
+}
+
+/*Configuración de las text-boxes para el tema de Postulados*/
+
+.contenedor-postulado-fila{
+  width: 30%;
+}
+
+.contenedor-postulado{
+  width: 30%;
+}
+
+.contenedor-postulado-columna{
+  width: 45%;
+}
+
+/*Configuración imagenes parte Valor absoluto*/
+
+.recta-numerica{
+  width: 75%;
+}
+
+/*Configuración de tablas de contenido: Valor absoluto y relativo*/
+
+.tabla-dos{
+  width: 52%;
+}
+
+.tabla-tres{
+  width: 40%;
+}
+
+/*Configuración del footer de la página*/
+
+.contenedor-footer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mensaje-footer{
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.reloj{
+  height: 50%;
+  margin-right: 10px;
+}
+
+}
+
+/*Media query min-width (configuración # 3)*/
+
+/*-------------Formato pantalla computadora-------------*/
+
+@media (min-width:1000px) { 
+
+/*Configuración del menú desplegable*/
+
+.contenedor-menu{
+  width: 20%;
+}
+
+/*Configuración de las text-boxes para el tema de Orden*/
+
+.contenedor-relacion{
+  width: 15%;
+}
+
+/*Configuración de las text-boxes para el tema de Postulados*/
+
+.contenedor-postulado-fila{
+  width: 15%;
+}
+
+.contenedor-postulado{
+  width: 15%;
+}
+
+.contenedor-postulado-columna{
+  width: 23%;
+}
+
+/*Configuración imagenes parte Valor absoluto*/
+
+.recta-numerica{
+  width: 50%;
+}
+
+/*Configuración de tablas de contenido: Valor absoluto y relativo*/
+
+.tabla-dos{
+  width: 30%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.tabla-tres{
+  width: 20%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+/*Configuración del footer de la página*/
+
+.contenedor-footer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+}

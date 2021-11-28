@@ -1,0 +1,351 @@
+/*Paleta de colores
+
+#4ABDAC - Verde azul
+#DFDCE3 - Gris
+#F7B733 - Amarillo
+#FC4A1A - Naranja
+
+*/
+
+/*Reinicio de estilos CSS3 para página web*/
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+  
+/* Configuración del header fijo horizontal*/
+
+.contenedor-header{
+  position: fixed;
+  width: 100vw;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #4ABDAC;
+}
+
+/*Configuración título de la página*/
+
+.nombre-pagina{
+  text-align: right;
+  padding-right: 20px;
+  font-family: 'Raleway';
+  color: #fff;
+}
+
+/*Configuración del menú desplegable*/
+
+.contenedor-menu{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.click-inicio{
+  width:20%;
+  border: none;
+  font-size: 40px;
+  color: #fff;
+  background-color: #4ABDAC;
+}
+
+.lista-principal{
+  display: flex;
+  flex-direction: column;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition:0.3s;
+}
+
+.lista-real{
+  display: flex;
+  flex-direction: column;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'Raleway';
+  color: #fff;
+}
+
+.click-real{
+  border: none;
+  background-color: #FC4A1A;
+  text-align: left;
+  padding: 15px 20px;
+}
+
+.links{
+  border: none;
+  background-color: #d6390e;
+  text-align: left;
+  padding: 15px 20px;
+}
+
+.menu-visible{
+  transform: scaleY(1);
+}
+
+/*Configuración general de la página:
+
+1) Background de la página
+2) Ajuste del tamaño de la página al 90% del viewport
+3) Centrado del contenido
+4) Ajuste vertical en relación al tamaño de la cabecera horizontal fija*/
+
+body{
+  background-color: #DFDCE3;
+}
+
+.contenedor-articulo{
+  width: 90vw;
+  margin: 0 auto;
+  padding-top: 125px;
+}
+
+/*Configuración de los cuadros de fecha de creación y títulos del artículo*/
+
+.contenedor-fecha-titulo{
+  margin-bottom: 30px;
+}
+
+.cuadro-fecha{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 100px;
+  min-height: 90px;
+  background-color: #FC4A1A;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.cuadro-dia, .cuadro-mes{
+  font-family: 'Raleway';
+  color: white;
+}
+
+.cuadro-dia{
+  font-size: 40px;
+}
+
+.titulo-articulo{
+  font-family: 'Raleway';
+  font-size: 25px;
+}
+
+/*Configuración de los parrafos de la página*/
+
+.parrafo{
+  text-align: justify;
+  font-family: 'Raleway';
+  font-size: 18px;
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+
+.item{
+  font-family: 'Raleway';
+  font-size: 18px;
+  margin-left: 50px;
+  line-height: 30px;
+}
+
+/*Configuración de los subtítulos del artículo */
+
+.subtitulo{
+  font-family: 'Raleway';
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/*Configuración de tablas de contenido: Propiedades*/
+
+.tabla-uno{
+  width: 75%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.titulo-tabla{
+  border: 2px solid white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: 'Raleway';
+  color: white;
+  background-color: #FC4A1A;
+}
+
+td{
+  border: 2px solid white;
+  padding: 10px 10px;
+  font-family: 'Raleway';
+  font-size: 18px;
+  text-align: left;
+}
+
+/*Configuración del cuestionario # 1*/
+
+#rootTwo{
+  margin-bottom: 30px;
+}
+
+/*Configuración de las text-boxes para el tema de Orden*/
+
+.contenedor-relacion-principal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-relacion{
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 10px;
+  border: 2px solid #F7B733;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.signo-relacion, .contenido-relacion{
+  font-family: 'Raleway';
+  color: #FC4A1A;
+  font-size: 18px;
+}
+
+/*Configuración de las text-boxes para el tema de Postulados*/
+
+.contenedor-postulado-fila{
+  width: 20%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border: 2px solid #F7B733;
+  border-radius: 5px;
+}
+
+.contenedor-postulado{
+  width: 20%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 10px;
+  border: 2px solid #F7B733;
+  border-radius: 5px;
+}
+
+.contenedor-postulado-columna{
+  width: 20%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 10px;
+  border: 2px solid #F7B733;
+  border-radius: 5px;
+}
+
+.contenido-postulado{
+  font-family: 'Raleway';
+  color: #FC4A1A;
+  font-size: 18px;
+}
+
+/*Configuración imagenes parte Valor absoluto*/
+
+.contenedor-imagenes{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.recta-numerica{
+  width: 50%;
+}
+
+/*Configuración de tablas de contenido: Valor absoluto y relativo*/
+
+.tabla-dos{
+  width: 30%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.tabla-tres{
+  width: 20%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.titulo-tabla-dos{
+  border: 2px solid white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: 'Raleway';
+  color: white;
+  background-color: #FC4A1A;
+}
+
+.titulo-tabla-tres{
+  border: 2px solid white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: 'Raleway';
+  color: white;
+  background-color: #FC4A1A;
+}
+
+td{
+  border: 2px solid white;
+  padding: 10px 10px;
+  font-family: 'Raleway';
+  font-size: 18px;
+  text-align: left;
+}
+
+/*Configuración del footer de la página*/
+
+.contenedor-footer{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #4ABDAC;
+}
+
+.mensaje-footer{
+  font-family: 'Raleway';
+  color: #fff;
+  font-size: 20px;
+  align-self: center;
+}
+
+.reloj{
+  background-color: #FC4A1A;
+  font-family: 'Raleway';
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
